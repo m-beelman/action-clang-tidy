@@ -21,5 +21,15 @@ body:
         clarified before you create an issue. These are things that are already
         known or that are popular pitfalls
       options:
-        - label: I agree to follow this project's Code of Conduct
+        - label:
+            I confirm that I am connected to the Philips Global Network (PGN)
+            over Virtual Private Network (VPN).
+          required: true
+        - label:
+            I confirm that I have cleared my cache for the assessment page in
+            the browser. (Ctrl + F5)
+          required: true
+        - label: I confirm that I have checked my browser for enabled AdBlockers
+          required: true
+        - label: I confirm that I am using an up-to-date version of my browser
           required: true
