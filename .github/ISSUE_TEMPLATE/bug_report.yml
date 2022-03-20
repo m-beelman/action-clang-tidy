@@ -10,7 +10,6 @@ body:
       value: |
         Thank you for helping to improve our assessment! But before you add 
         a new issue we ask you to check the following things.
-
   - type: checkboxes
     id: terms
     attributes:
@@ -33,6 +32,39 @@ body:
           required: true
         - label: I confirm that I am using an up-to-date version of my browser
           required: true
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Operating System
+      description: On which operating system do you run the assessment?
+      options:
+        - Windows
+        - Linux
+        - MacOS
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      description: Which browser did you use for the assessment form?
+      options:
+        - Chrome
+        - Edge
+        - FireFox
+        - Safari
+        - Opera
+        - Internet Explorer
+    validations:
+      required: true
+  - type: input
+    id: navigation_path
+    attributes:
+      label: Business details
+      description:
+        Please enter the path to the project where the problem occurred. Please
+        use the '>' to separate the sections.
+      placeholder: Business > Business Category > Project
+    validations:
+      required: true
   - type: checkboxes
     id: what-happened-checkboxes
     attributes:
