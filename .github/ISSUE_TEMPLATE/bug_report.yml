@@ -21,7 +21,7 @@ body:
         known or that are popular pitfalls.
       options:
         - label:
-            I confirm that I am connected to the Philips Global Network (PGN)
+            :thumbsup: I confirm that I am connected to the Philips Global Network (PGN)
             over Virtual Private Network (VPN).
           required: true
         - label:
